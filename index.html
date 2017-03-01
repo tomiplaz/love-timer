@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="lttApp">
+    <head lang="en">
+        <meta charset="UTF-8">
+
+        <title>&lt;3</title>
+
+        <link type="image/png" rel="icon" href="heart.png"/>
+        <link type="text/css" rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body ng-controller="lttCtrl" ng-cloak>
+        <div class="wrapper">
+            <div class="heart-wrapper">
+                <img class="heart-image contraction" src="heart.png"/>
+            </div>
+            <p class="counter" ng-bind="out"></p>
+        </div>
+        
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>

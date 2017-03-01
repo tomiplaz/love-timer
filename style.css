@@ -1,0 +1,54 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: #000000;
+    color: #ff0000;
+    font-family: 'Lucida Console', Monaco, monospace;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.wrapper {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.heart-wrapper {
+    display: inline-block;
+    width: 20vw;
+    height: 18vw;
+}
+
+.heart-image {
+    width: 98%;
+    height: 98%;
+    -webkit-transition: 0.5s all linear;
+    -moz-transition: 0.5s all linear;
+    -ms-transition: 0.5s all linear;
+    -o-transition: 0.5s all linear;
+    transition: 0.5s all linear;
+}
+
+.contraction {
+    width: 88%;
+    height: 88%;
+    -webkit-transition: 0.15s all linear;
+    -moz-transition: 0.15s all linear;
+    -ms-transition: 0.15s all linear;
+    -o-transition: 0.15s all linear;
+    transition: 0.15s all linear;
+}
+
+.counter {
+    font-size: 10vw;
+    margin: 30px 0 0 0;
+}
