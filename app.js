@@ -18,11 +18,13 @@
         var counter = angular.element(document.getElementsByClassName("counter"));
         var heartw = angular.element(document.getElementsByClassName("heart-wrapper"));
         var uinterval = $interval(update, 1);
+	var date = new Date();
+	date.setSeconds(date.getSeconds() + 12);
 
         $interval(beat, 850);
 
         function update() {
-            $scope.raw = (new Date(2017, 2, 27, 20, 0, 0, 0) - new Date());
+            $scope.raw = (date - new Date());
             $scope.d = Math.floor($scope.raw / 1000 / 60 / 60 / 24);
             $scope.h = Math.floor(($scope.raw - $scope.d * 24 * 60 * 60 * 1000) / 1000 / 60 / 60);
             $scope.min = Math.floor(($scope.raw - $scope.d * 24 * 60 * 60 * 1000 - $scope.h * 60 * 60 * 1000) / 1000 / 60);
